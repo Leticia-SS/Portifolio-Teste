@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Portifólio</title>
+  <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <header>
+    <nav class="navmenu">
+      <ul class="menu">
+        <li class="menuitem"><a href="#inicio">Início</a></li>
+        <li class="menuitem"><a href="#sobre">Sobre</a></li>
+        <li class="menuitem"><a href="#habilidade">Habilidades</a></li>
+        <li class="menuitem"><a href="#projeto">Projeto</a></li>
+        <li class="menuitem"><a href="#historico">Histórico</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div id="inicio" class="boxhome">
+      <div class="perfil">
+        <img class="perfilicon" src="img/perfil.jpg" alt="Perfil" title="Leticia">
+      </div>
+
+      <div class="boxintro">
+        <h1>Bem-vindo ao meu<br>Portfólio!</h1>
+        <p class="parboxintro">Meu nome é Letica Saraiva <br> e eu atuo como <br> <strong>Desenvolvedora Web</strong>
+        </p>
+      </div>
+    </div>
+
+    <div id="sobre" class="boxconteudo">
+      <div class="boxsobre">
+        <div class="sobretitulo">
+          <h2>Sobre</h2>
+        </div>
+        <div class="boxsobre1">
+          <table class="infopessoal">
+            <thead>
+              <tr>
+                <th class="thtitulo" colspan="2">Informações Pessoais</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="coluna1">Nome:</td>
+                <td>Leticia Saraiva</td>
+              </tr>
+              <tr>
+                <td class="coluna1">Idade:</td>
+                <td>23 anos</td>
+              </tr>
+              <tr>
+                <td class="coluna1">Idioma:</td>
+                <td>Inglês (Fluente)</td>
+              </tr>
+            </tbody>
+          </table>
+          <table class="infopessoal2">
+            <thead>
+              <tr>
+              <th class="thtitulo" colspan="2">Minhas Redes Pessoais:</th>
+                </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td class="tablinha2"><a href="https://github.com/Leticia-SS" target="_blank"><img class="tableicon"
+                      src="img/github.png" alt="icone" title="GitHub"></a></td>
+                <td class="tablinha2"><a href="https://www.linkedin.com/in/leticia-saraiva-013/" target="_blank"><img
+                      class="tableicon" src="img/linkedin.png" alt="icone" title="LinkedIn"></a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="boxsobre">
+        <div class="boxdosboxessobre">
+          <div class="boxsobre2">
+            <p>Sou uma estudante de engenharia de software, com conhecimentos em desenvolvimento Web, e estou em busca
+              de crescimento na área de desenvolvimento de software. Além disso, possuo uma paixão por desenvolvimento
+              de jogos, na qual faço cursos extracurriculares de Game Design, Concept Art e Unity 2D.</p>
+          </div>
+          <div class="boxsobre4">
+            <p><span class="pspanicone"><img class="spanicone picone" src="iconebalao.png" alt="icone"
+                  title="icon">Características</span></p>
+            <div class="boxsobre3">
+              <ul class="lista_carac_1">
+                <li class="caracteristicas">Analítica</li>
+                <li class="caracteristicas">Criativa</li>
+                <li class="caracteristicas">Responsável</li>
+              </ul>
+              <ul class="lista_carac_2">
+                <li class="caracteristicas">Adaptável</li>
+                <li class="caracteristicas">Confiável</li>
+                <li class="caracteristicas">Proativa</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="habilidade" class="boxconteudocolumn">
+
+      <div class="habilidadetitulo">
+        <h2>Habilidades</h2>
+      </div>
+      <div class="boxhabilidade">
+        <p class="pboxhabilidade">Estas são algumas das ferramentas das quais possuo conhecimento:</p>
+        <div class="boxhabilidadeicon">
+          <img src="img/html.png" class="habilidadeicon" alt="icone" title="HTML5">
+          <img src="img/css.png" alt="icone" class="habilidadeicon" title="CSS3">
+          <img src="img/Javascript.png" alt="icone" class="habilidadeicon" title="Javascript">
+          <img src="img/python.png" alt="icone" class="habilidadeicon" title="Python">
+        </div>
+      </div>
+    </div>
+
+
+    <div id="projeto" class="boxconteudocolumn">
+      <div class="projetotitulo">
+        <h2>Projetos</h2>
+      </div>
+      <div class="boxprojeto">
+        <ul class="cardprojeto">
+        
+            <li class="card1">
+              <span class="spancard">Desenvolvimento de um Portifólio</span>
+              <img src="img/arrowdown.png" alt="icon" class="setaicon" onclick="abrir(0)" title="Seta">
+            </li>
+          </ul>
+          <ul class="cardprojetoconteudo esconder">
+            <li class="cardimagem">
+
+              <img src="img/portifolio1.PNG" class="projetoimg" alt="project" title="Page 1">
+            </li>
+            <li class="cardconteudo">Este site foi produzido o design no figma e a estrutura no replit e postada no
+              GitHub.</li>
+            
+          </ul>
+
+          <ul>
+            <li class="card2">
+              <span class="spancard">Site responsivo de Culinária</span>
+              <img src="img/arrowdown.png" alt="icon" class="setaicon" onclick="abrir(1)" title="Seta">
+            </li>
+          </ul>
+          <ul class="cardprojetoconteudo esconder">
+            <li class="cardimagem">
+              <img src="img/foodsite.PNG" class="projetoimg" alt="project" title="Page 1">
+            </li>
+            <li class="cardconteudo">Este site foi produzido o design no figma e a estrutura no replit.</li>
+            
+          </ul>
+
+          <ul>
+            <li class="card2">
+              <span class="spancard">Site One Page para um Estudio</span>
+              <img src="img/arrowdown.png" class="setaicon" onclick="abrir(2)" alt="icon" title="Seta">
+            </li>
+          </ul>
+          <ul class="cardprojetoconteudo esconder">
+            <li class="cardimagem">
+              <img src="img/studio.PNG" class="projetoimg" alt="project" title="Page 1">
+            </li>
+            <li class="cardconteudo">Este site foi produzido o design no figma e a estrutura no replit.</li>
+            
+          </ul>
+
+          <ul>
+            <li class="card1">
+              <span class="spancard">Site responsivo para Culinária</span>
+              <img src="img/arrowdown.png" alt="icon" class="setaicon" onclick="abrir(3)" title="Seta">
+            </li>
+          </ul>
+          <ul class="cardprojetoconteudo esconder">
+            <li class="cardimagem">
+              <img src="img/appfood.PNG" class="projetoimg" alt="project" title="Page 1">
+            </li>
+            <li class="cardconteudo">Este site foi produzido o design no figma e a estrutura no replit.</li>
+            
+          </ul>
+      </div>
+    </div>
+
+
+    <div id="historico" class="boxconteudocolumnhist">
+      <div class="histtitulo">
+        <h2>Histórico Acadêmico</h2>
+      </div>
+      <div class="boxhist">
+        <div class="boxhistorico1">
+          <ul class="ullisthist">
+            <li class="titulohist">Graduação</li>
+            <li class="itemhisticon"><span class="itemlisticon"><img src="img/Infnet.png" alt="icon" class="histicon"
+                  title="Instituto INFNET"></span><span class="itemlisticon">Instituto INFNET
+                <br>Escola Superior da Tecnologia
+                <br>da Informação</span></li>
+            <li class="itemhist">Engenharia de Software</li>
+            <li class="itemhist">Inicio: 2023 <br><br>Término: 2027</li>
+            <li class="itemhist">Status: Em Andamento</li>
+          </ul>
+        </div>
+        <div class="boxhistorico2">
+          <ul class="ullisthist">
+            <li class="titulohist">Ensino Médio Técnico</li>
+            <li class="itemhisticon"><span class="itemlisticon"><img src="img/ifrj.png" alt="icon" class="histicon2"
+                  title="Instituto Federal de Ciência e Tecnologia"></span><span class="itemlisticon">IFRJ
+                <br>Instituto Federal de
+                <br>Ciência e Tecnologia</span></li>
+            <li class="itemhist">Meio Ambiente</li>
+            <li class="itemhist">Inicio: 2016 <br> <br> Término: 2021 </li>
+            <li class="itemhist">Status: Concluído </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <footer>
+    <p class="rodape">Se tiver qualquer interesse ou dúvidas sobre o meu trabalho, favor entre em contato através do meu
+      email</p>
+    <div class="email"><a
+        href="mailto:leticia.ssilva@al.infnet.edu.br?subject=Olá,%20estou%20entrando%20em%20contato%20através%20do%20seu%20Portifólio"
+        title="Portfólio: Perguntas e Interesse"><img class="emailicon" src="img/email.png" alt="icone"
+          title="email"></a></div>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>

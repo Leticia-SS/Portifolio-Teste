@@ -1,0 +1,526 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+:root{
+  --preto: #131200;
+  --roxo: #310A31;
+  --lilas: #C04FCD;
+  --azul: #246EB9;
+  --branco: #f9f9f9;
+}
+
+@font-face{
+  font-family: 'Kollektif';
+  src: url("Kollektif.ttf");
+}
+.fa-code{
+  color: var(--branco);
+}
+
+body{
+  font-family: 'kollektif';
+  background-color: var(--preto);
+  color: var(--branco);
+}
+
+header{
+  height: 70px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} /* cabeçalho */
+.navmenu{
+   display: flex;
+  justify-content: center;
+  align-items: center;
+} /* navegador menu */
+.menu{
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+} /* menu navegação */
+.menuitem a{
+  text-decoration: none;
+  color: var(--branco);
+  width: 190px;
+  height: 70px;
+  gap: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} /* anchors dos itens do menu */
+.menuitem a:hover{
+  font-size: 18px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 0 0 var(--lilas);
+  background-color: var(--azul);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} /* efeito do menu */
+
+
+main{
+  background-color: var(--roxo);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 5%;
+  border-radius: 10px;
+} /* escopo da página */
+.boxhome{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20%;
+  padding: 50px;
+  width: 100%;
+  height: 800px;
+} /* boxes de separa conteudo */
+.perfil{
+  width: 300px;
+  height: 300px;
+  box-shadow: 50px -50px 0 0 var(--lilas);
+  border-radius: 10px;
+  position: relative;
+  top: -80px;
+  left: 0;
+} /* div imagem de perfil */
+.perfilicon{
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+} /* imagem de perfil */
+.boxintro{
+  width: 520px;
+  height: 420px;
+  background-color: var(--branco);
+  color: var(--preto);
+  border-radius: 10px;
+  box-shadow: 50px 50px 0 0 var(--azul);
+  padding: 5px;
+  position: relative;
+  top: 40px;
+  right: 30px;
+} /* div conteudo do perfil*/
+h1{
+  text-align: center;
+  padding: 10px;
+  margin: 5%;
+  font-size: 48px;
+  text-shadow: 1px 1px var(--lilas);
+   line-height: 65px;
+} /* titulo h1 */
+.parboxintro{
+  text-align: center;
+  padding: 10px;
+  margin: 5%;
+  font-size: 24px;
+  line-height: 40px;
+} /* paragrafo h1 */
+
+.boxconteudo{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10%;
+  padding: 50px;
+  width: 100%;
+  height: 900px;
+}
+.boxsobre{
+  width: 50%;
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+} /* box do titulo sobre e da tabela de infomrações */
+h2{
+  font-size: 48px;
+  font-weight: bold;
+} /* subtítulo h2 */
+.sobretitulo{
+  font-size: 48px;
+  background-color: var(--lilas);
+  width: 270px;
+  height: 130px;
+  border-radius: 10px;
+  box-shadow: 6px 6px 0 0 var(--preto);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} /* div do titulo h2 */
+.boxsobre1{
+  height: 450px;
+  width: 430px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--branco);
+  color: var(--preto);
+  border-radius: 10px;
+  box-shadow: 20px 20px 0 0 var(--azul);
+} /* 2 divs internas de boxsobre */
+.tableicon{
+  width: 100px;
+  height: 100px;
+} /* icone na tabela */
+.infopessoal{
+  width: 380px;
+  height: 250px;
+  padding: 20px 20px 0 20px;
+  font-size: 20px;
+} /* tabela informações pessoais */
+.infopessoal2{
+  width: 380px;
+  height: 200px;
+  padding: 0 20px 20px 20px;
+  font-size: 20px;
+} /* tabela redes sociais */
+.thtitulo{
+  height: 50px;
+  font-size: 20px;
+} /* titulo tabela */
+.coluna1{
+  width: 65px;
+  height: 50px;
+  text-align: left;
+} /* coluna 1 tabela 1 */
+.tablinha2{
+  width: 150px;
+  text-align: center; 
+} /* linhas da tabela 2 */
+
+.boxdosboxessobre{
+  background-color: var(--azul);
+  box-shadow: 20px 20px 0 0 var(--branco);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 600px;
+   width: 500px;
+  padding: 30px;
+} /* box a direita do "Sobre" */
+.boxsobre2{
+  font-size: 20px;
+  line-height: 30px;
+} /* paragrafo */
+.boxsobre4{
+   font-size: 20px;
+  line-height: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 440px;
+  height: 310px;
+  padding: 20px;
+  gap: 20px;
+}
+.spanicone{
+  width: 30px;
+  height: 30px;
+  color: var(--branco);
+}
+.pspanicone{
+   display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.boxsobre3{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+} /* box com as listas */
+.lista_carac_1, .lista_carac_2{
+  height: 150px;
+  width: 200px;
+}
+.caracteristicas{
+  width: 200px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.habilidadetitulo{
+   font-size: 48px;
+  background-color: var(--azul);
+  width: 320px;
+  height: 130px;
+  border-radius: 10px;
+  box-shadow: 6px 6px 0 0 var(--preto);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} /* titulo h2 de habilidades */
+.habilidadeicon{
+  width: 120px;
+  height: 120px;
+} /* icones das habilidades */
+.boxhabilidadeicon{
+  height: 200px;
+  width: 600px;
+ display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+} /* box icones habilidades*/
+.boxconteudocolumn{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 50px;
+  gap: 40px;
+} /* div habilidade seção */
+.boxhabilidade{
+  width: 800px;
+  height: 400px;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding: 30px;
+  background-color: var(--branco);
+  border-radius: 10px;
+  box-shadow: 20px 20px 0 0 var(--lilas);
+  color: var(--preto);
+  font-size: 20px;
+} /* div do conteudo da parte de habilidades */
+
+.projetotitulo{
+  background-color: var(--lilas);
+  width: 270px;
+  height: 130px;
+  border-radius: 10px;
+  box-shadow: 6px 6px 0 0 var(--preto);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} /* div do h2 */
+.cardprojetoconteudo{
+  width: 800px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--branco);
+  box-shadow: 20px 20px 0 0 var(--preto);
+  list-style-type: none;
+  color: var(--preto);
+}
+.setaicon{
+  width: 20px;
+  height: 20px;
+}
+.card1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 350px;
+  height: 150px;
+  color: var(--preto);
+  background-color: var(--branco);
+  border-radius: 10px;
+  box-shadow: 20px 20px 0 0 var(--lilas);
+  padding: 10px;
+}
+.card2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 350px;
+  height: 150px;
+  color: var(--preto);
+  background-color: var(--branco);
+  border-radius: 10px;
+  box-shadow: 20px 20px 0 0 var(--azul);
+  padding: 10px;
+}
+.cardprojeto{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 120px;
+}
+.spancard{
+  height: 100px;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.projetoimg{
+  width: 680px;
+}
+.cardimagem{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.cardconteudo{
+  height: 150px;
+  font-size: 20px;
+display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.esconder{
+  display: none;
+}
+
+
+.boxconteudocolumnhist{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: 800px;
+  padding: 50px;
+  gap: 40px;
+} /* seção dos boxes de historico */
+.histtitulo{
+  font-size: 48px;
+  background-color: var(--azul);
+  width: 530px;
+  height: 130px;
+  border-radius: 10px;
+  box-shadow: 6px 6px 0 0 var(--preto);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} /* box seção de histórico */
+.boxhist{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 150px;
+}
+.ullisthist{
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 450px;
+}
+.boxhistorico1{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  height: 500px;
+  background-color: var(--branco);
+  color: var(--preto);
+  border-radius: 10px;
+  box-shadow: 20px 20px 0 0 var(--lilas);
+} /* box conteudo historico */
+.boxhistorico2{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  height: 500px;
+  background-color: var(--lilas);
+  color: var(--branco);
+  border-radius: 10px;
+  box-shadow: 20px 20px 0 0 var(--branco);
+} /* box conteudo historico */
+.histicon{
+  width: 64px;
+  height: 64px;
+}
+.titulohist{
+  font-size: 28px;
+  font-weight: bold;
+  margin: 5px;
+  height: 50px;
+} /* titulo da lista */
+.itemhisticon{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+} /* linha com span */
+.itemlisticon{
+  margin: 5px;
+  font-size: 18px;
+} /*  span da lista */
+.itemhist{
+  margin: 5px;
+  font-size: 16px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.histicon2{
+  width: 50px;
+  height: 64px;
+}
+
+
+footer{ 
+  background-color: var(--azul);
+  height: 145px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+} /* rodapé */
+.rodape{
+  font-size: 20px;
+  margin-left: 5%;
+}
+.email{
+  width: 120px;
+  height: 120px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 5%;
+} /* div imagem email */
+.emailicon{
+  width: 110px;
+  height: 110px;
+  background-color: var(--lilas);
+  border: 2px solid var(--lilas);
+  border-radius: 100px;
+} /* imagem email */
+
